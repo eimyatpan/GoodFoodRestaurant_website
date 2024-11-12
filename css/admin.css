@@ -1,0 +1,28 @@
+.topnav{
+    background-color:#86d0e3;
+    display:flex;
+    justify-content:center;
+    font-family :'Times New Roman' ;}
+
+.topnav a{
+    color: rgb(21, 18, 18);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family :'Times New Roman' ;
+    border-right: 1px solid #e4e4e4;}
+
+.topnav a:hover{
+    background-color:white;
+    color:rgb(218, 22, 172);}
+
+    .entries{
+        background-color:#FFE6E8;
+        color:#7692de;
+        font-family:'Times New Roman';
+        font-size: 15px;
+        width: 100%;
+        margin: 90px auto;
+        padding: 40px;
+        line-height: 20px;}

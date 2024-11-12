@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+           <meta charset = 'utf-8'>
+           <title>Good Food Restaurant</title>
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+           <link href="css/assignment.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<section id="header2">
+    <img src = "imgs/GFLogo.PNG"class="Logo">
+    <img src = "imgs/logout.gif" class="logoutimg">
+    <div class="header-text1">
+        <h1>Log Out Successfully!!! </h1>
+        <h1>Thanks for using us!!!</h1>
+    </div>
+        <div id="sideNav">  
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="AboutRestaurant.html">About Restaurant</a></li>
+                    <li><a href="PublicPView.php">Food Menu</a></li>
+                    <li><a href="MemberLogin.html">Member Login</a></li>
+                    <li><a href="MemberRegistration.php">Member Registration</a></li>
+                    <li><a href="AdminLogin.html">Admin Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="Manubtn">
+            <img src="imgs/Menu.png"id="manu">
+                <script>
+                    var Manubtn = document.getElementById("Manubtn")
+                    var sideNav = document.getElementById("sideNav")
+                    var manu = document.getElementById("manu")
+                    sideNav.style.right == "-250px";
+                    Manubtn.onclick=function()
+                    {
+                        if(sideNav.style.right == "-250px")
+                        {
+                            sideNav.style.right = "0";
+                            manu.src="imgs/Cross.png";
+                        }else
+                        {
+                            sideNav.style.right = "-250px";
+                            manu.src="imgs/Menu.png";
+                        }
+                    }
+                </script>
+        </div>
+        <div class="header-text2">
+            <h3>Please Rate This Website</h3>
+        </div>
+        <div style="margin-left: 35%; margin-top: 2%;">
+            <div class="rate-area">
+                <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+            </div>    
+          </div>      
+    </body>
+</html>
